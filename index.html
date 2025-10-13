@@ -4,25 +4,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Favorita</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Formulario de Consulta Personalizada</title>
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
-    <header>
-        <h1>La Favorita</h1>
-    </header>
+    <div class="container">
+        <!-- Header con gradiente -->
+        <div class="header">
+            <div class="header-icon">💬</div>
+            <h1>¿Necesitas ayuda especial?</h1>
+        </div>
 
-    <main>
-        <h2>Productos</h2>
-    </main>
+        <!-- Contenido del formulario -->
+        <div class="content">
 
-    <footer>
-        <p>&copy; 2025 La Favorita. Todos los derechos reservados. | Términos y Condiciones | Política de Privacidad</p>
-    </footer>
+            <!-- Subtítulo -->
+            <p class="subtitle">Cuéntanos qué necesitas y te ayudaremos a encontrar los productos perfectos para ti.</p>
 
-    <script src="js/data.js" defer></script>
-    <script src="js/main.js" defer></script>
+            <!-- Formulario -->
+            <form id="consultaForm">
+                <div class="form-grid">
+                    <!-- Nombre completo -->
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                    </div>
+
+                    <!-- Correo electrónico -->
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                    </div>
+
+                    <!-- Mensaje o pedido especial -->
+                    <div class="form-group full-width">
+                        <label for="mensaje">Mensaje o pedido especial</label>
+                        <textarea id="mensaje" name="mensaje"
+                            placeholder="Escribe qué necesitas: ¿Eres específico, intolerante para oficina, presupuesto personalizado..."
+                            required></textarea>
+                    </div>
+                </div>
+
+                <!-- Botones -->
+                <div class="button-group">
+                    <button type="submit" class="btn btn-primary">
+                        <span>✓</span>
+                        Enviar Consulta
+                    </button>
+                    <button type="button" class="btn btn-secondary" onclick="window.history.back()">
+                        Llamar Ahora
+                    </button>
+                </div>
+            </form>
+
+            <!-- Tip informativo -->
+            <div class="tip">
+                <span class="tip-icon">💡</span>
+                <span>Tip: Si necesitas una lista específica de sitios para tu oficina, adjunta la información y te
+                    prepararemos un presupuesto personalizado.</span>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+
 </body>
 
 </html>
