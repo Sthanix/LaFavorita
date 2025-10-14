@@ -1,8 +1,139 @@
 body {
-    background-color: purple;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
 }
-body {
-    background-color: purple;
+
+.navbar-container {
+    border-bottom: 1px solid #eee;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+}
+
+.logo img {
+    height: 45px;
+}
+
+.search-bar {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin: 0 clamp(20px, 10vw, 175px);
+    background-color: #f0e8e8;
+    border: solid 1px #dbcdcd;
+    border-radius: 8px;
+    height: 34px;
+}
+
+.search-bar input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: #f0e8e8;
+    font-size: 13px;
+    color: #333;
+    box-sizing: border-box;
+}
+
+.search-bar input::placeholder {
+    color: #727272;
+}
+
+.search-bar:focus-within {
+    outline: 3px solid #c2c6ca;
+}
+
+.search-bar input:focus {
+    background-color: #f0e8e8;
+}
+
+.btn-search {
+    border: none;
+    background: none;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.account,
+.cart {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    position: relative;
+    margin-right: 15px;
+}
+
+.account span {
+    font-size: 13px;
+    font-weight: bolder;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+.badge {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    background-color: #e91e63;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 2px 6px;
+}
+
+.menu-container {
+    margin: 0px 20px 20px 0px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 40px;
+    padding: 10px 40px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    padding: 10px;
+    transition: all 0.15s ease;
+    font-size: 13px;
+}
+
+.menu a:hover {
+    background-color: #f0e8e8;
+    color: #e91e63;
+    border-radius: 8px;
+}
+
+@media (max-width: 900px) {
+    .search-bar {
+        display: none;
+    }
+
+    .menu {
+        gap: 20px;
+        overflow-x: auto;
+        padding: 10px 20px;
+    }
 }
 
 /* Contenedor principal */

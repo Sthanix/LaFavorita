@@ -4,12 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de Consulta Personalizada</title>
+    <title>La Favorita</title>
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body>
+    <header>
+        <div class="navbar-container">
+            <div class="navbar">
+                <div class="left-section">
+                    <div class="logo">
+                        <img src="img/logo.png" alt="La Favorita">
+                    </div>
+                </div>
+                <div class="search-bar">
+                    <button class="btn-search">
+                        <img src="img/search.png" alt="Search" class="icon">
+                    </button>
+                    <input type="text" placeholder="Buscar lapiceros, cuadernos, engrampadores...">
+                </div>
+                <div class="right-section">
+                    <div class="account">
+                        <img src="img/user.png" alt="Usuario" class="icon">
+                        <span>Mi Cuenta</span>
+                    </div>
+                    <div class="cart">
+                        <img src="img/cart.png" alt="Carrito" class="icon">
+                        <span class="badge">3</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="menu-container">
+            <div class="menu">
+                <a href="#">Productos</a>
+                <a href="#">Marcas</a>
+                <a href="#">Promociones</a>
+                <a href="#">Ofertas</a>
+                <a href="#">Novedades</a>
+                <a href="#">Tecnología</a>
+            </div>
+        </nav>
+    </header>
+
     <div class="container">
         <!-- Header con gradiente -->
         <div class="header">
@@ -67,7 +104,13 @@
             </div>
         </div>
     </div>
-    <script src="js/main.js"></script>
+
+    <footer>
+        <p>&copy; 2025 La Favorita. Todos los derechos reservados. | Términos y Condiciones | Política de Privacidad</p>
+    </footer>
+
+    <script src="js/data.js" defer></script>
+    <script src="js/main.js" defer></script>
 
 </body>
 
