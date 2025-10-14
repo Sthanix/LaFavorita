@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>La Favorita – Inicio</title>
+  <link rel="stylesheet" href="css/productos.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="wrap topbar__row">
+      <a class="brand" href="#">
+        <img src="img/logo.png" alt="Logo La Favorita">
+      </a>
+
+      <form class="search" action="#" method="get">
+        <button class="search__icon" type="submit">🔍</button>
+        <input class="search__input" type="search" name="q" placeholder="Buscar lapiceros, cuadernos, engrampadores…">
+      </form>
+
+      <nav class="user">
+        <a href="#" class="user__link">Mi Cuenta</a>
+      </nav>
+    </div>
+
+    <nav class="wrap menubar">
+      <a href="#" class="menu__link">Productos</a>
+      <a href="#" class="menu__link">Marcas</a>
+      <a href="#" class="menu__link">Promociones</a>
+      <a href="#" class="menu__link">Ofertas</a>
+      <a href="#" class="menu__link">Novedades</a>
+      <a href="#" class="menu__link">Tecnología</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="wrap hero__card">
+      <div class="hero__text">
+        <h1>Útiles de Oficina <span>2025</span></h1>
+        <p>Hasta 30% de descuento en artículos de oficina y papelería</p>
+        <div class="hero__actions">
+          <a href="#" class="btn btn-primary">Ver Ofertas</a>
+          <a href="#" class="btn btn-ghost">Catálogo</a>
+        </div>
+        <div class="hero__bullets">
+          <span>• Entrega gratuita</span>
+          <span>• Garantía de calidad</span>
+        </div>
+      </div>
+      <div class="hero__media">
+        <img src="img/DESTACADO.jpg.png" alt="Producto destacado">
+      </div>
+    </div>
+  </section>
+
+  <section class="catalog">
+  <div class="wrap">
+    <div class="catalog__cols">
+      <aside class="promo-list">
+        <h3 class="promo-list__title">Promociones Activas</h3>
+
+        <article class="promo-card">
+          <div class="promo-card__media">
+            <img src="img/Cuaderno.png" alt="">
+          </div>
+          <div class="promo-card__body">
+            <h4>3x2 en Útiles</h4>
+            <p>Lleva 3 cuadernos y paga solo 2</p>
+            <a href="#" class="btn btn-outline">Ver Más</a>
+          </div>
+        </article>
+
+        <article class="promo-card">
+          <div class="promo-card__media">
+            <img src="img/oferta1.png" alt="">
+          </div>
+          <div class="promo-card__body">
+            <h4>Descuentos en Cuadernos</h4>
+            <p>Hasta 25% off en cuadernos y agendas</p>
+            <a href="#" class="btn btn-outline">Ver Más</a>
+          </div>
+        </article>
+
+        <article class="promo-card">
+          <div class="promo-card__media">
+            <img src="img/Cuaderno.png" alt="">
+          </div>
+          <div class="promo-card__body">
+            <h4>Ofertas Especiales</h4>
+            <p>Descuentos exclusivos para estudiantes</p>
+            <a href="#" class="btn btn-outline">Ver Más</a>
+          </div>
+        </article>
+
+        <div class="promo-subscribe">
+          <h4>¡No te pierdas nada!</h4>
+          <p>Suscríbete y recibe ofertas exclusivas</p>
+          <form action="#">
+            <input type="email" placeholder="tu@correo.com" aria-label="Correo">
+            <button class="btn btn-primary" type="submit">Suscribirse</button>
+          </form>
+        </div>
+      </aside>
+
+      <section class="products">
+        <header class="products__head">
+          <h2>Productos Destacados</h2>
+          <div class="filters">
+            <select>
+              <option>Todos los productos</option>
+              <option>Cuadernos</option>
+              <option>Lapiceros</option>
+              <option>Archivadores</option>
+            </select>
+            <select>
+              <option>Ordenar por</option>
+              <option>Precio menor</option>
+              <option>Precio mayor</option>
+              <option>Novedades</option>
+            </select>
+          </div>
+        </header>
+
+        <div class="products__grid">
+          <article class="card">
+            <a class="card__img" href="#"><img src="img/G2PILOT.png" alt=""></a>
+            <span class="badge badge-off">-18%</span>
+            <div class="card__body">
+              <span class="card__cat">Lapiceros</span>
+              <h3 class="card__title"><a href="#">Set de Lapiceros Pilot G2 x12</a></h3>
+              <div class="card__price">
+                <span class="now">S/ 28.5</span>
+                <span class="old">S/ 35</span>
+              </div>
+              <button class="btn btn-primary btn-full">Agregar al Carrito</button>
+            </div>
+          </article>
+
+          <article class="card">
+            <a class="card__img" href="#"><img src="img/cuad100.jpg" alt=""></a>
+            <span class="badge badge-new">Nuevo</span>
+            <div class="card__body">
+              <span class="card__cat">Cuadernos</span>
+              <h3 class="card__title"><a href="#">Cuaderno Espiral 100 Hojas A4</a></h3>
+              <div class="card__price">
+                <span class="now">S/ 12</span>
+              </div>
+              <button class="btn btn-primary btn-full">Agregar al Carrito</button>
+            </div>
+          </article>
+
+          <article class="card">
+            <a class="card__img" href="#"><img src="img/engrampador.jpg" alt=""></a>
+            <span class="badge badge-off">-13%</span>
+            <div class="card__body">
+              <span class="card__cat">Engrapadoras</span>
+              <h3 class="card__title"><a href="#">Engrapadora Metálica Heavy Duty</a></h3>
+              <div class="card__price">
+                <span class="now">S/ 45</span>
+                <span class="old">S/ 52</span>
+              </div>
+              <button class="btn btn-primary btn-full">Agregar al Carrito</button>
+            </div>
+          </article>
+
+          <article class="card">
+            <a class="card__img" href="#"><img src="img/sharpiex24.jpg" alt=""></a>
+            <span class="badge badge-new">Nuevo</span>
+            <div class="card__body">
+              <span class="card__cat">Plumones</span>
+              <h3 class="card__title"><a href="#">Plumones Sharpie x24 Colores</a></h3>
+              <div class="card__price">
+                <span class="now">S/ 38.9</span>
+              </div>
+              <button class="btn btn-primary btn-full">Agregar al Carrito</button>
+            </div>
+          </article>
+
+          <article class="card">
+            <a class="card__img" href="#"><img src="img/colorfcx36.jpg" alt=""></a>
+            <span class="badge badge-off">-20%</span>
+            <div class="card__body">
+              <span class="card__cat">Útiles Escolares</span>
+              <h3 class="card__title"><a href="#">Set de Colores Faber Castell x36</a></h3>
+              <div class="card__price">
+                <span class="now">S/ 22.5</span>
+                <span class="old">S/ 28</span>
+              </div>
+              <button class="btn btn-primary btn-full">Agregar al Carrito</button>
+            </div>
+          </article>
+
+          <article class="card">
+            <a class="card__img" href="#"><img src="img/fileof.jpg" alt=""></a>
+            <div class="card__body">
+              <span class="card__cat">Archivadores</span>
+              <h3 class="card__title"><a href="#">Folder Manila Tamaño Oficio x50</a></h3>
+              <div class="card__price">
+                <span class="now">S/ 18</span>
+              </div>
+              <button class="btn btn-primary btn-full">Agregar al Carrito</button>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+  </div>
+</section>
+
+
+</body>
+</html>
