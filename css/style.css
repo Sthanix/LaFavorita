@@ -125,6 +125,22 @@ body {
 }
 
 @media (max-width: 900px) {
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  .navbar-container,
+  .navbar,
+  .hero-section,
+  .category,
+  .catalog-section,
+  .highlight-section {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
   .search-bar {
     display: none;
   }
@@ -133,6 +149,10 @@ body {
     gap: 20px;
     overflow-x: auto;
     padding: 10px 20px;
+  }
+
+  .cart, .account {
+    margin-right: 0;
   }
 }
 
@@ -235,6 +255,7 @@ body {
   border-color: #ff2d9b;
   color: #ff2d9b;
   background: #ffffff;
+  max-width: 75%;
 }
 
 .btn-full {
@@ -243,7 +264,7 @@ body {
 
 .catalog {
   padding: 20px 0 32px;
-  
+
 }
 
 .catalog__cols {
