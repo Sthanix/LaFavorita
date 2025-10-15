@@ -97,7 +97,7 @@ body {
 }
 
 .menu-container {
-  margin: 0px 20px 20px 0px;
+  margin: 0 0 20px 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -125,22 +125,6 @@ body {
 }
 
 @media (max-width: 900px) {
-
-  html,
-  body {
-    overflow-x: hidden;
-  }
-
-  .navbar-container,
-  .navbar,
-  .hero-section,
-  .category,
-  .catalog-section,
-  .highlight-section {
-    max-width: 100%;
-    box-sizing: border-box;
-  }
-
   .search-bar {
     display: none;
   }
@@ -151,7 +135,8 @@ body {
     padding: 10px 20px;
   }
 
-  .cart, .account {
+  .cart,
+  .account {
     margin-right: 0;
   }
 }
